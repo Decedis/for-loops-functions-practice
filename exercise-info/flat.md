@@ -13,7 +13,7 @@ console.log(arr1.flat());
 For this exercise we want you to build a flattenArray() function that solves the same task 
 for the depth of 1 with **for loops ONLY**.
 
-a concatArrays function should
+a flattenArray() function should
 • Take 2 arrays as arguments
 • Return a single array of arguments' arrays values
 
