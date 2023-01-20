@@ -15,6 +15,9 @@ Remember, every function must return something.
 - Descriptions for some exercises are located in /exercise-info/ folder
 - Open e1.js file and start writing functions' code in the "Your code goes here..." placeholder to achieve the goals described.
 - **!!! You can use FOR LOOPS ONLY to iterate through data array/nested arrays. Other types of iterating not allowed (.filter, .find, .map, .reduce, etc...), you can still use `for of` `for in` as you wish and we encourage you to do so**
+- **!!! The ONLY array method you can use is `Array.push()`. Other methods are not allowed.**
+- **!!! Spread/rest operators are NOT allowed.**
+- **!!! Do NOT declare other functions inside the given function code block. All the code outside of the given function will be commented out when grading.**
 - Once you are done, run the test command ```npm run test-1``` in the command line, where "1" is the current exercise number. This will start the test environment and show the passed and failed tests for the current code you have written.
 - If the test results have all tests passed (no red comments), consider it to be finished successfully, then switch to the next exercise file.
 - If any of the tests fails, refactor the code and run the test command after you've fixed the function. 
