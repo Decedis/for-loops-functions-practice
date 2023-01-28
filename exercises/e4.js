@@ -23,9 +23,7 @@ export function findMinValueInArray(array) {
 export function findMaxValueInArray(array) {
   // Your code goes here...
   for (let i = 0; i < array.length; i++) {
-    console.log("I: ", i);
     for(let j = 0; j < array.length - i - 1; j++){
-        console.log("J: ", j);
       if (array[j] > array[j + 1]) {
           //note: figure this out
           let temp = array[j];
