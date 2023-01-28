@@ -4,13 +4,22 @@
 
 export function getNumbersWithSquareRoots(max) {
   // Your code goes here...
-  let tempArray = [];
+  let newArray = [];
+  let comparisonArray = [];
+  // for (let i = 0; i <= max; i++){
+  //   if ((Math.sqrt(i) % 1) === 0){
+  //     tempArray.push(i);
+  //   }
+  // }
   for (let i = 0; i <= max; i++){
-    if ((Math.sqrt(i) % 1) === 0){
-      tempArray.push(i);
+    comparisonArray.push(i);
+  }
+  for (let i = 0; i <= comparisonArray.length; i++) {
+    if ((comparisonArray[i] * comparisonArray[i]) <= max){
+      newArray.push(comparisonArray[i] * comparisonArray[i])
     }
   }
-  return tempArray;
+  return newArray;
 }
 
 // === TEST YOURSELF ===
