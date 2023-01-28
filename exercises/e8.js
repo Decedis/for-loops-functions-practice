@@ -7,12 +7,12 @@
 export function getClientWithGreatestBalance(array) {
   let tempArray = [];
   let newArray = [];
-
+  
     for (let i = 0; i < array.length; i++) {
       tempArray.push(array[i].balance);
     }
-    let maxVal = tempArray[1];
     //find max
+    let maxVal = tempArray[1];
     for (let i = 0; i < tempArray.length; i++) {
         if(maxVal < tempArray[i + 1]) {
             maxVal = tempArray[i + 1];
@@ -25,7 +25,6 @@ export function getClientWithGreatestBalance(array) {
     }
     newArray.push(array);
     return newArray;
-
 }
 
 
