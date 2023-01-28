@@ -10,11 +10,18 @@ export function getClientWithLeastBalance(array) {
     for (let i = 0; i < array.length; i++) {
         if(array[i].balance != 0){
             tempArray.push(array[i].balance);
+            }
+        }
+    let minVal = tempArray[1];
+    //find min
+    for (let i = 0; i < tempArray.length; i++) {
+        if(minVal > tempArray[i + 1]) {
+            minVal = tempArray[i + 1];
         }
     }
-    let lowestVal = Math.min(...tempArray);
+
     for (let i = 0; i < array.length; i++){
-        if(array[i].balance == lowestVal){
+        if(array[i].balance == minVal){
             array = array[i];
         }
     }

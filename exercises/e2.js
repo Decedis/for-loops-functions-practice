@@ -6,11 +6,14 @@ export function getNumbersWithSquareRoots(max) {
   // Your code goes here...
   let newArray = [];
   let comparisonArray = [];
+  
+  // doing it this way is a lot easier
   // for (let i = 0; i <= max; i++){
   //   if ((Math.sqrt(i) % 1) === 0){
   //     tempArray.push(i);
   //   }
   // }
+
   for (let i = 0; i <= max; i++){
     comparisonArray.push(i);
   }
