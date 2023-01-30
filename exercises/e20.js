@@ -6,8 +6,30 @@
 // NOTE: You MUST use double/nested FOR loop to solve this exercise. The array.includes() method is NOT allowed.
 
 export function separateNamesWithAFromRest(array) {
-  // Your code goes here...
-
+  let nameWithA = [];
+  let nameWithoutA = [];
+  let bannedIndices = [];
+  let trueIndices = [];
+  let finalArray = [];
+  for (let i = 0; i < array.length; i++) {
+    let found = false;
+    for (let j = 0; j < array[i].length; j++) {
+      if (array[i][j] == 'a') {
+        found = true
+        nameWithA.push(array[i]);
+        bannedIndices.push(i);
+        break;
+      }
+    }
+    if (!found) {
+      trueIndices.push(i);
+    }
+  }
+  for (let i = 0; i < trueIndices.length; i++) {
+    nameWithoutA.push(array[trueIndices[i]]);
+  }
+  finalArray.push(nameWithA, nameWithoutA);
+  return finalArray;
 }
 
 
